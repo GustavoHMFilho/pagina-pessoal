@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal - Gustavo Henrique</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+      min-width: 220px;
+    }
+
+    .btn-bootstrap {
+      background: #7952b3;
+      color: white;
+    }
+
+    .btn-bootstrap:hover {
+      background: #67419c;
+    }
+
+    .btn-tailwind {
+      background: #06b6d4;
+      color: white;
+    }
+
+    .btn-tailwind:hover {
+      background: #0891b2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Página Pessoal</h1>
+    <p>
+      Projeto desenvolvido para a disciplina GAC116 - Programação Web.
+      Escolha abaixo qual versão deseja visualizar.
+    </p>
+
+    <div class="buttons">
+      <a class="btn-bootstrap" href="./bootstrap/">Ver versão Bootstrap</a>
+      <a class="btn-tailwind" href="./tailwind/">Ver versão Tailwind</a>
+    </div>
+  </div>
+</body>
+</html>
