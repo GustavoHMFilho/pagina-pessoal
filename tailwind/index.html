@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo Henrique Moraes Filho | Página Pessoal</title>
+  <meta name="description" content="Página pessoal de Gustavo Henrique Moraes Filho, Analista de Automações e estudante de Sistemas de Informação." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-white">
+  <nav class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="#inicio" class="text-lg font-bold">Gustavo Henrique Moraes Filho</a>
+      <div class="hidden items-center gap-6 md:flex">
+        <a href="#sobre" class="hover:text-blue-600 dark:hover:text-blue-400">Sobre</a>
+        <a href="#habilidades" class="hover:text-blue-600 dark:hover:text-blue-400">Habilidades</a>
+        <a href="#projetos" class="hover:text-blue-600 dark:hover:text-blue-400">Projetos</a>
+        <a href="#contato" class="hover:text-blue-600 dark:hover:text-blue-400">Contato</a>
+        <button id="themeToggle" class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-900">Alternar tema</button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white">
+    <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-20 lg:grid-cols-2">
+      <div>
+        <span class="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium">Analista de Automações • Sistemas de Informação • Integrações e Processos</span>
+        <h1 class="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl">Gustavo Henrique Moraes Filho</h1>
+        <p class="mt-6 text-lg leading-8 text-slate-200">
+          Sou Analista de Automações e estudante de Sistemas de Informação na UFLA.
+          Trabalho com automações voltadas para empresas, com foco em <strong>n8n</strong>, <strong>GoHighLevel</strong>,
+          <strong>Kommo</strong> e outras ferramentas para atendimento, integração de plataformas e otimização de processos.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#projetos" class="rounded-xl bg-blue-600 px-6 py-3 font-semibold transition hover:bg-blue-500">Ver projetos</a>
+          <a href="#contato" class="rounded-xl border border-white/30 px-6 py-3 font-semibold transition hover:bg-white/10">Falar comigo</a>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img src="../assets/gustavo.jpg" alt="Foto de Gustavo Henrique Moraes Filho" class="w-full max-w-sm rounded-3xl object-cover shadow-2xl ring-1 ring-white/10" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl font-bold">Sobre mim</h2>
+      <div class="mt-8 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/50 dark:bg-slate-900 dark:shadow-black/20 lg:col-span-2">
+          <p class="mb-4 leading-8 text-slate-600 dark:text-slate-300">
+            Meu nome é Gustavo Henrique Moraes Filho, tenho 21 anos e sou estudante de Sistemas de Informação na Universidade Federal de Lavras (UFLA).
+            Atualmente trabalho como <strong>Analista de Automações</strong>, criando soluções voltadas para produtividade, integração de sistemas e automação de rotinas empresariais.
+          </p>
+          <p class="mb-4 leading-8 text-slate-600 dark:text-slate-300">
+            Atuo principalmente com <strong>n8n</strong>, <strong>GoHighLevel</strong>, <strong>Kommo</strong> e outras plataformas que permitem estruturar fluxos,
+            automatizar atendimentos, organizar funis, integrar ferramentas e reduzir o trabalho manual em operações do dia a dia.
+          </p>
+          <p class="leading-8 text-slate-600 dark:text-slate-300">
+            Meu objetivo é crescer cada vez mais na área de tecnologia, construindo soluções modernas, eficientes e escaláveis que gerem impacto real para empresas.
+          </p>
+        </div>
+        <div class="rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/50 dark:bg-slate-900 dark:shadow-black/20">
+          <h3 class="text-xl font-bold">Informações rápidas</h3>
+          <ul class="mt-4 space-y-3 text-slate-600 dark:text-slate-300">
+            <li><span class="font-semibold text-slate-900 dark:text-white">Idade:</span> 21 anos</li>
+            <li><span class="font-semibold text-slate-900 dark:text-white">Curso:</span> Sistemas de Informação – UFLA</li>
+            <li><span class="font-semibold text-slate-900 dark:text-white">Profissão:</span> Analista de Automações</li>
+            <li><span class="font-semibold text-slate-900 dark:text-white">Ferramentas:</span> n8n, GoHighLevel, Kommo</li>
+            <li><span class="font-semibold text-slate-900 dark:text-white">Foco:</span> automação de processos, integrações e produtividade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="bg-white py-16 dark:bg-slate-900/50">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold">Habilidades e tecnologias</h2>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">n8n</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">GoHighLevel</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">Kommo</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">Automação de Processos</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">Atendimento via WhatsApp</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">Integração de Sistemas</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">CRM</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">HTML</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">CSS</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">JavaScript</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">Banco de Dados</span>
+          <span class="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">Produtividade Empresarial</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl font-bold">Projetos e experiências</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 dark:bg-slate-900 dark:shadow-black/20">
+          <h3 class="text-xl font-bold">Automações para WhatsApp</h3>
+          <p class="mt-3 leading-7 text-slate-600 dark:text-slate-300">Criação de fluxos automatizados para atendimento, triagem de mensagens, respostas rápidas e melhoria da comunicação com clientes.</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 dark:bg-slate-900 dark:shadow-black/20">
+          <h3 class="text-xl font-bold">Integrações com n8n</h3>
+          <p class="mt-3 leading-7 text-slate-600 dark:text-slate-300">Desenvolvimento de integrações entre sistemas, APIs e plataformas para centralizar dados e acelerar processos internos.</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 dark:bg-slate-900 dark:shadow-black/20">
+          <h3 class="text-xl font-bold">Fluxos com GoHighLevel e Kommo</h3>
+          <p class="mt-3 leading-7 text-slate-600 dark:text-slate-300">Estruturação de automações comerciais, CRM, funis e processos de acompanhamento de leads e clientes.</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 dark:bg-slate-900 dark:shadow-black/20">
+          <h3 class="text-xl font-bold">Projeto acadêmico com IA</h3>
+          <p class="mt-3 leading-7 text-slate-600 dark:text-slate-300">Pesquisa voltada ao uso de inteligência artificial para identificar sinais de depressão em textos de estudantes universitários.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 dark:bg-slate-900/50">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 lg:grid-cols-2">
+        <div class="rounded-3xl bg-slate-100 p-8 dark:bg-slate-900">
+          <h2 class="text-3xl font-bold">Objetivo profissional</h2>
+          <p class="mt-4 leading-8 text-slate-600 dark:text-slate-300">
+            Quero crescer na área de automações e tecnologia, desenvolvendo soluções cada vez mais robustas, úteis e escaláveis para empresas que buscam produtividade, organização e eficiência operacional.
+          </p>
+        </div>
+        <div class="rounded-3xl bg-slate-100 p-8 dark:bg-slate-900">
+          <h3 class="text-2xl font-bold">Diferenciais</h3>
+          <ul class="mt-4 space-y-3 leading-7 text-slate-600 dark:text-slate-300">
+            <li><strong>Visão prática:</strong> transformar processos em fluxos automatizados de forma objetiva</li>
+            <li><strong>Ferramentas modernas:</strong> experiência com n8n, GoHighLevel, Kommo e integrações diversas</li>
+            <li><strong>Foco em resultado:</strong> priorização de produtividade, organização e eficiência</li>
+            <li><strong>Aprendizado contínuo:</strong> evolução constante na área de tecnologia e automação</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl font-bold">Contato</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <a class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 transition hover:-translate-y-1 dark:bg-slate-900 dark:shadow-black/20" href="mailto:ti.gustavofilho@gmail.com">
+          <h3 class="text-xl font-bold">Email</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">ti.gustavofilho@gmail.com</p>
+        </a>
+        <a class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 transition hover:-translate-y-1 dark:bg-slate-900 dark:shadow-black/20" href="https://www.linkedin.com/in/gustavo-henrique-moraes-filho" target="_blank">
+          <h3 class="text-xl font-bold">LinkedIn</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">linkedin.com/in/gustavo-henrique-moraes-filho</p>
+        </a>
+        <a class="rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50 transition hover:-translate-y-1 dark:bg-slate-900 dark:shadow-black/20" href="https://github.com/GustavoHMFilho" target="_blank">
+          <h3 class="text-xl font-bold">GitHub</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">github.com/GustavoHMFilho</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-6 text-center text-sm text-slate-500 dark:border-slate-800 dark:text-slate-400">
+    <p>© 2026 - Gustavo Henrique Moraes Filho. Página desenvolvida com Tailwind CSS.</p>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const toggleButton = document.getElementById('themeToggle');
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        root.classList.add('dark');
+        toggleButton.textContent = 'Tema claro';
+      } else {
+        root.classList.remove('dark');
+        toggleButton.textContent = 'Tema escuro';
+      }
+      localStorage.setItem('tailwind-theme', theme);
+    }
+
+    const savedTheme = localStorage.getItem('tailwind-theme') || 'light';
+    applyTheme(savedTheme);
+
+    toggleButton.addEventListener('click', () => {
+      const isDark = root.classList.contains('dark');
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
