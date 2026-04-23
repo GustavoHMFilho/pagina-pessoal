@@ -14,14 +14,44 @@
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-white">
   <nav class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-      <a href="#inicio" class="text-lg font-bold">Gustavo Henrique Moraes Filho</a>
-      <div class="hidden items-center gap-6 md:flex">
-        <a href="#sobre" class="hover:text-blue-600 dark:hover:text-blue-400">Sobre</a>
-        <a href="#habilidades" class="hover:text-blue-600 dark:hover:text-blue-400">Habilidades</a>
-        <a href="#projetos" class="hover:text-blue-600 dark:hover:text-blue-400">Projetos</a>
-        <a href="#contato" class="hover:text-blue-600 dark:hover:text-blue-400">Contato</a>
-        <button id="themeToggle" class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-900">Alternar tema</button>
+    <div class="mx-auto max-w-6xl px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="#inicio" class="text-lg font-bold">Gustavo Henrique Moraes Filho</a>
+
+        <!-- Menu desktop -->
+        <div class="hidden items-center gap-6 md:flex">
+          <a href="#sobre" class="hover:text-blue-600 dark:hover:text-blue-400">Sobre</a>
+          <a href="#habilidades" class="hover:text-blue-600 dark:hover:text-blue-400">Habilidades</a>
+          <a href="#projetos" class="hover:text-blue-600 dark:hover:text-blue-400">Projetos</a>
+          <a href="#contato" class="hover:text-blue-600 dark:hover:text-blue-400">Contato</a>
+          <button id="themeToggleDesktop" class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-900">
+            Alternar tema
+          </button>
+        </div>
+
+        <!-- Botão hamburguer mobile -->
+        <button
+          id="mobileMenuButton"
+          class="flex items-center justify-center rounded-xl border border-slate-300 p-3 transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-900 md:hidden"
+          aria-label="Abrir menu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu mobile -->
+      <div id="mobileMenu" class="hidden border-t border-slate-200/80 pt-4 dark:border-slate-800 md:hidden">
+        <div class="flex flex-col gap-4">
+          <a href="#sobre" class="hover:text-blue-600 dark:hover:text-blue-400">Sobre</a>
+          <a href="#habilidades" class="hover:text-blue-600 dark:hover:text-blue-400">Habilidades</a>
+          <a href="#projetos" class="hover:text-blue-600 dark:hover:text-blue-400">Projetos</a>
+          <a href="#contato" class="hover:text-blue-600 dark:hover:text-blue-400">Contato</a>
+          <button id="themeToggleMobile" class="w-fit rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-900">
+            Alternar tema
+          </button>
+        </div>
       </div>
     </div>
   </nav>
@@ -164,25 +194,49 @@
 
   <script>
     const root = document.documentElement;
-    const toggleButton = document.getElementById('themeToggle');
+    const desktopThemeButton = document.getElementById('themeToggleDesktop');
+    const mobileThemeButton = document.getElementById('themeToggleMobile');
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function updateThemeButtons(theme) {
+      const text = theme === 'dark' ? 'Tema claro' : 'Tema escuro';
+      desktopThemeButton.textContent = text;
+      mobileThemeButton.textContent = text;
+    }
 
     function applyTheme(theme) {
       if (theme === 'dark') {
         root.classList.add('dark');
-        toggleButton.textContent = 'Tema claro';
       } else {
         root.classList.remove('dark');
-        toggleButton.textContent = 'Tema escuro';
       }
+
+      updateThemeButtons(theme);
       localStorage.setItem('tailwind-theme', theme);
     }
 
     const savedTheme = localStorage.getItem('tailwind-theme') || 'light';
     applyTheme(savedTheme);
 
-    toggleButton.addEventListener('click', () => {
+    desktopThemeButton.addEventListener('click', () => {
       const isDark = root.classList.contains('dark');
       applyTheme(isDark ? 'light' : 'dark');
+    });
+
+    mobileThemeButton.addEventListener('click', () => {
+      const isDark = root.classList.contains('dark');
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
     });
   </script>
 </body>
