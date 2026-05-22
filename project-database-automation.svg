@@ -1,0 +1,22 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#101114"/>
+  <rect x="70" y="70" width="1060" height="535" rx="28" fill="#171923" stroke="#3F46A8" stroke-width="2"/>
+  <text x="110" y="150" fill="#F8FAFC" font-family="Inter, Arial" font-size="52" font-weight="800">Dados para Automações</text>
+  <text x="112" y="197" fill="#A9B1C7" font-family="Inter, Arial" font-size="24">Histórico, memória e estados de conversa</text>
+  <g font-family="Inter, Arial" text-anchor="middle">
+    <ellipse cx="322" cy="276" rx="138" ry="44" fill="#202331" stroke="#29D391" stroke-width="2"/>
+    <rect x="184" y="276" width="276" height="126" fill="#202331" stroke="#29D391" stroke-width="2"/>
+    <ellipse cx="322" cy="402" rx="138" ry="44" fill="#202331" stroke="#29D391" stroke-width="2"/>
+    <text x="322" y="345" fill="#F8FAFC" font-size="30" font-weight="800">Supabase</text>
+    <ellipse cx="600" cy="276" rx="138" ry="44" fill="#202331" stroke="#4B55D9" stroke-width="2"/>
+    <rect x="462" y="276" width="276" height="126" fill="#202331" stroke="#4B55D9" stroke-width="2"/>
+    <ellipse cx="600" cy="402" rx="138" ry="44" fill="#202331" stroke="#4B55D9" stroke-width="2"/>
+    <text x="600" y="345" fill="#F8FAFC" font-size="30" font-weight="800">Postgres</text>
+    <ellipse cx="878" cy="276" rx="138" ry="44" fill="#202331" stroke="#F6B454" stroke-width="2"/>
+    <rect x="740" y="276" width="276" height="126" fill="#202331" stroke="#F6B454" stroke-width="2"/>
+    <ellipse cx="878" cy="402" rx="138" ry="44" fill="#202331" stroke="#F6B454" stroke-width="2"/>
+    <text x="878" y="345" fill="#F8FAFC" font-size="30" font-weight="800">Redis</text>
+  </g>
+  <rect x="234" y="502" width="732" height="58" rx="16" fill="#202331" stroke="#30364F"/>
+  <text x="600" y="539" fill="#A9B1C7" font-family="Inter, Arial" font-size="22" text-anchor="middle">Base técnica para fluxos mais rápidos, organizados e escaláveis</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#101114"/>
+  <rect x="60" y="60" width="1080" height="555" rx="28" fill="#171923" stroke="#3F46A8" stroke-width="2"/>
+  <circle cx="146" cy="150" r="52" fill="#29D391" fill-opacity="0.14"/>
+  <path d="M126 151c0-17 14-31 31-31s31 14 31 31-14 31-31 31c-6 0-12-2-17-5l-15 4 4-14c-2-5-3-10-3-16z" stroke="#29D391" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="230" y="142" fill="#F8FAFC" font-family="Inter, Arial" font-size="52" font-weight="800">IA de Atendimento 24h</text>
+  <text x="232" y="190" fill="#A9B1C7" font-family="Inter, Arial" font-size="24">WhatsApp, memória, contexto e handoff humano</text>
+  <g stroke="#4B55D9" stroke-width="3" stroke-linecap="round">
+    <path d="M184 340H360"/>
+    <path d="M520 340H696"/>
+    <path d="M858 340H1016"/>
+  </g>
+  <g font-family="Inter, Arial" text-anchor="middle">
+    <rect x="96" y="286" width="160" height="108" rx="18" fill="#202331" stroke="#29D391"/>
+    <text x="176" y="333" fill="#F8FAFC" font-size="24" font-weight="800">WhatsApp</text>
+    <text x="176" y="362" fill="#A9B1C7" font-size="16">Evolution API</text>
+    <rect x="360" y="286" width="160" height="108" rx="18" fill="#202331" stroke="#4B55D9"/>
+    <text x="440" y="333" fill="#F8FAFC" font-size="24" font-weight="800">n8n</text>
+    <text x="440" y="362" fill="#A9B1C7" font-size="16">Rotas e fluxos</text>
+    <rect x="696" y="286" width="162" height="108" rx="18" fill="#202331" stroke="#F6B454"/>
+    <text x="777" y="333" fill="#F8FAFC" font-size="24" font-weight="800">OpenAI</text>
+    <text x="777" y="362" fill="#A9B1C7" font-size="16">Agente IA</text>
+    <rect x="1016" y="286" width="128" height="108" rx="18" fill="#202331" stroke="#F67280"/>
+    <text x="1080" y="333" fill="#F8FAFC" font-size="23" font-weight="800">Humano</text>
+    <text x="1080" y="362" fill="#A9B1C7" font-size="16">Resumo</text>
+  </g>
+  <g font-family="Inter, Arial">
+    <rect x="248" y="474" width="704" height="74" rx="18" fill="#202331" stroke="#30364F"/>
+    <text x="292" y="520" fill="#A9B1C7" font-size="22">Redis + Postgres + Supabase para memória, estado e histórico</text>
+  </g>
+</svg>

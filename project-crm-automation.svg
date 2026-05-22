@@ -1,0 +1,26 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="32" fill="#101114"/>
+  <rect x="70" y="70" width="1060" height="535" rx="28" fill="#171923" stroke="#3F46A8" stroke-width="2"/>
+  <text x="110" y="150" fill="#F8FAFC" font-family="Inter, Arial" font-size="52" font-weight="800">CRM e Funil Comercial</text>
+  <text x="112" y="197" fill="#A9B1C7" font-family="Inter, Arial" font-size="24">Leads organizados, follow-ups e etapas automatizadas</text>
+  <g font-family="Inter, Arial">
+    <rect x="116" y="290" width="220" height="120" rx="18" fill="#202331" stroke="#29D391"/>
+    <text x="156" y="342" fill="#F8FAFC" font-size="26" font-weight="800">Captura</text>
+    <text x="156" y="374" fill="#A9B1C7" font-size="18">WhatsApp, forms e ads</text>
+    <rect x="490" y="238" width="220" height="120" rx="18" fill="#202331" stroke="#4B55D9"/>
+    <text x="530" y="290" fill="#F8FAFC" font-size="26" font-weight="800">Qualificação</text>
+    <text x="530" y="322" fill="#A9B1C7" font-size="18">Regras e dados</text>
+    <rect x="490" y="424" width="220" height="120" rx="18" fill="#202331" stroke="#F6B454"/>
+    <text x="530" y="476" fill="#F8FAFC" font-size="26" font-weight="800">Follow-up</text>
+    <text x="530" y="508" fill="#A9B1C7" font-size="18">Mensagens e tarefas</text>
+    <rect x="864" y="290" width="220" height="120" rx="18" fill="#202331" stroke="#F67280"/>
+    <text x="904" y="342" fill="#F8FAFC" font-size="26" font-weight="800">CRM</text>
+    <text x="904" y="374" fill="#A9B1C7" font-size="18">Funil atualizado</text>
+  </g>
+  <g stroke="#4B55D9" stroke-width="4" stroke-linecap="round">
+    <path d="M336 350C408 350 418 298 490 298"/>
+    <path d="M336 350C408 350 418 484 490 484"/>
+    <path d="M710 298C780 298 794 350 864 350"/>
+    <path d="M710 484C780 484 794 350 864 350"/>
+  </g>
+</svg>
